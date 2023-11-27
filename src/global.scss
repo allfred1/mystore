@@ -1,0 +1,94 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'SF';
+    src: url(./assets/SF-Pro-Display-Regular.otf);
+}
+
+$placehoder: #96A7AF;
+$warnimg: #FF565E;
+$progress: #FFBC25;
+$title: #1A3B34;
+$optital: #3DD598;
+
+* {
+    box-sizing: border-box !important;
+    box-shadow: none;
+    border: none;
+    outline: none;
+    padding: 0;
+    margin: 0;
+
+    &::before {
+        box-sizing: border-box;
+    }
+
+    &::after {
+        box-sizing: border-box;
+    }
+}
+
+body {
+
+
+    font-family: 'SF', sans-serif;
+    font-size: 16px;
+    background-color: #2A3C44;
+    color: #FFFFFF;
+    vertical-align: baseline;
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    ol,
+    ul,
+    nav,
+    a {
+        list-style: none;
+        text-decoration: none;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    input,
+    button,
+    textarea,
+    select {
+        font: inherit;
+    }
+
+    p,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        overflow-wrap: break-word;
+    }
+}
+
+
+
+.container {
+    max-width: 1140px;
+    width: 100%;
+
+    margin: 0 auto;
+    padding: 0 15px;
+
+    flex-wrap: wrap;
+
+    @media(max-width: 768px) {
+        flex-direction: column;
+    }
+
+    @media(max-width: 368px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}
